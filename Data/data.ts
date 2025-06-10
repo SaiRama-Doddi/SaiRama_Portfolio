@@ -3,7 +3,7 @@ export const BaseInfo = {
   position: "Full Stack Developer",
   description:
     "I am a Full Stack Developer with 1 year and 4 months of experience, primarily working with Java, Spring Boot, and RESTful APIs on the backend. I’ve built and maintained scalable backend systems and integrated them with modern frontend frameworks. On the frontend, I’ve used React.js, Next.js, and Tailwind CSS to create responsive user interfaces. I enjoy developing end-to-end solutions and writing clean, maintainable code that delivers real value.",
-  profilePic: "/images/71.jpg",
+  profilePic: "/images/my-profile.jpg",
 };
 
 export const aboutInfo = {
@@ -65,11 +65,47 @@ export const servicesData = [
 // constants/projectData.ts
 export const projectData = [
   {
-    id: 1,
+    id: 5,
+    title: "Nectar-Eccomerce",
+    description:
+      "A modern creative agency site with responsive design, animations, and scroll effects.",
+    images: ["/projects/nectar-1.png","/projects/nectar-2.png", "/projects/nectar-3.png","/projects/nectar-4.png","/projects/nectar-5.png","/projects/nectar-6.png","/projects/nectar-7.png","/projects/nectar-8.png"],
+    url: "https://nectar-ecommerce-9pvn.vercel.app/",
+    technologies: ["React", "Tailwindcss","Exprees JS", "PostgreSQL (hosted on NeonDB)", "Node.js"],
+  },
+   {
+    id: 4,
+    title: "Entertainment Hub",
+    description:
+      "A modern creative agency site with responsive design, animations, and scroll effects.",
+    images: ["/projects/Entertainmentpage-1.png", "/projects/Entertainmentpage-2.png", "/projects/Entertainmentpage-3.png","/projects/Entertainmentpage-4.png","/projects/Entertainmentpage-5.png","/projects/Entertainmentpage-6.png","/projects/Entertainmentpage-7.png"],
+    url: "https://entertainment-taupe.vercel.app/",
+    technologies: ["React", "Tailwindcss"],
+  },
+   {
+    id: 3,
+    title: "OCR",
+    description:
+      "A modern creative agency site with responsive design, animations, and scroll effects.",
+    images: ["/projects/ocr1.png", "/projects/ocr2.png", "/projects/ocr3.png","/projects/ocr4.png","/projects/ocr5.png"],
+    url: "https://eye-vision.vercel.app/",
+    technologies: ["Next JS", "TailwindsCSS","Typescript"],
+  },
+   {
+    id: 2,
     title: "Eye-Vision",
     description:
       "A modern creative agency site with responsive design, animations, and scroll effects.",
     images: ["/eye/eye1.png", "/eye/eye2.png", "/eye/eye3.png","/eye/eye4.png","/eye/eye5.png","/eye/eye6.png","/eye/eye7.png"],
+    url: "https://eye-vision.vercel.app/",
+    technologies: ["Microsoft PowerApps", "Datasource",],
+  },
+   {
+    id: 1,
+    title: "Handicrafts-store",
+    description:
+      "A modern creative agency site with responsive design, animations, and scroll effects.",
+    images: ["/handi/handi-1 (1).png", "/handi/handi-1 (2).png", "/handi/handi-1 (3).png","/handi/handi-1 (4).png","/handi/handi-1 (5).png","/handi/handi-1 (6).png","/handi/handi-1 (7).png", "/handi/handi-1 (8).png", "/handi/handi-1 (9).png", "/handi/handi-1 (10).png", "/handi/handi-1 (11).png", "/handi/handi-1 (12).png", "/handi/handi-1 (13).png", "/handi/handi-1 (14).png", "/handi/handi-1 (15).png"],
     url: "https://eye-vision.vercel.app/",
     technologies: ["Microsoft PowerApps", "Datasource",],
   },
