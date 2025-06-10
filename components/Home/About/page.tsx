@@ -26,7 +26,8 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
-      className="pt-5 pb-20 bg-gradient-to-b bg-white dark:from-[#050709] dark:to-[#0a0e12] text-black dark:text-white"
+     className="pt-10 mt-0 md:mt-[-20px] bg-gradient-to-b bg-white dark:from-[#050709] dark:to-[#0a0e12] text-black dark:text-white"
+
     >
       <SectionHeading>About Me</SectionHeading>
 

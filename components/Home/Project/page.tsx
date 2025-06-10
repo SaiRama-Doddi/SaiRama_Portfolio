@@ -5,6 +5,7 @@ import { projectData } from "../../../Data/data";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import SectionHeading from "../../Helper/page";
 
 const ProjectsPage = () => {
   const [imageIndices, setImageIndices] = useState(
@@ -31,11 +32,9 @@ const ProjectsPage = () => {
   return (
     <section className="min-h-screen bg-white dark:bg-[#0b0f17] text-black dark:text-white py-16 px-4 sm:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center">
-          My Projects
-        </h2>
+        <SectionHeading>My Projects</SectionHeading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12">
           {projectData.map((project) => {
             const currentIndex = imageIndices[project.id] || 0;
             const totalImages = project.images.length;
