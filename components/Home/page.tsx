@@ -8,12 +8,13 @@ import Skills from './Skills/page'
 const Home = () => {
   return (
     <div className="overflow-hidden">
-       <Hero/>
-       <About/>
-       <Services/>
-       <Skills/>
-       <Projects/>
-       <Contact/>
+      <section id="home"><Hero /></section>
+      <section id="about"><About /></section>
+      <section id="services"><Services /></section>
+      <section id="skills"><Skills /></section>
+      <section id="project"><Projects /></section>
+      <section id="skills"><Skills /></section>
+      <section id="contact"><Contact /></section>
     </div>
   )
 }

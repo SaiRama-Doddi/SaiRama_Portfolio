@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import {useRouter} from "next/navigation";
 
 type Props = {
   openNav(): void;
@@ -12,6 +13,7 @@ type Props = {
 
 const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
+     const router = useRouter(); 
 
   useEffect(() => {
     const handleScroll = () => setNavBg(window.scrollY > 60);
@@ -55,7 +57,8 @@ const Nav = ({ openNav }: Props) => {
 
         {/* Right Section */}
         <div className="flex items-center gap-4">
-          <button className="bg-white text-black text-sm sm:text-base font-medium px-6 sm:px-8 py-2 rounded-lg hover:bg-gray-200 transition">
+          <button className="bg-white text-black text-sm sm:text-base font-medium px-6 sm:px-8 py-2 rounded-lg hover:bg-gray-200 transition"
+            onClick={() => router.push("#contact")}>
             Hire Me
           </button>
 

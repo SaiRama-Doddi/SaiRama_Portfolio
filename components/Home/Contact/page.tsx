@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaEnvelope, FaPhone } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import SectionHeading from "../../Helper/page";
 
 const Contact = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -62,7 +63,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center mx-4 my-4 bg-white w-full py-10 px-6">
+
+      <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+    
+
+    >
+      <SectionHeading>Contact Me</SectionHeading>
+    <div className="flex flex-col sm:flex-row items-center justify-center mx-4 my-4 bg-white w-full py-10 px-6" >
+       
       {/* Contact Box */}
       <div className="bg-white rounded-lg p-6 w-[90%] sm:w-[60%] md:w-[50%] lg:w-[40%] text-center shadow-md">
         <h1 className="text-blue-700 font-bold text-2xl md:text-3xl lg:text-[2.5rem]">
@@ -150,11 +162,11 @@ const Contact = () => {
       </div>
 
       {/* Contact Information Section */}
-      <div className="flex flex-col items-center justify-center w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] rounded-lg p-6 text-center text-gray-800 space-y-4">
+      <div className="flex flex-col items-center justify-center w-[80%] sm:w-[95%] md:w-[60%] lg:w-[50%] rounded-lg p-6 text-center text-gray-800 space-y-4">
         {/* Phone Card */}
         <motion.div
-          className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-3 rounded-lg shadow-md w-[90%] sm:w-[80%] md:w-[70%]"
-          initial={{ opacity: 0, x: -50 }}
+  className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-4 rounded-lg shadow-md w-full max-w-2xl"
+            initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
@@ -168,24 +180,24 @@ const Contact = () => {
         </motion.div>
 
         {/* Email Card */}
-        <motion.div
-          className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-3 rounded-lg shadow-md w-[90%] sm:w-[80%] md:w-[70%]"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <div className="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
-            <FaEnvelope className="text-blue-600 text-md" />
-          </div>
-          <div className="text-left">
-            <h1 className="text-base font-semibold">Email Address</h1>
-            <p className="text-gray-600 text-sm">sairamadoddi@gmail.com</p>
-          </div>
-        </motion.div>
+    <motion.div
+  className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-4 rounded-lg shadow-md w-full max-w-2xl"
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+>
+  <div className="bg-blue-100 w-10 h-10 flex items-center justify-center rounded-full">
+    <FaEnvelope className="text-blue-600 text-md" />
+  </div>
+  <div className="text-left overflow-hidden">
+    <h1 className="text-base font-semibold">Email Address</h1>
+    <p className="text-gray-600 text-sm break-words">sairamadoddi@gmail.com</p>
+  </div>
+</motion.div>
 
         {/* Address Card */}
         <motion.div
-          className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-3 rounded-lg shadow-md w-[90%] sm:w-[80%] md:w-[70%]"
+           className="flex flex-row items-center gap-3 bg-white border border-gray-200 p-4 rounded-lg shadow-md w-full max-w-2xl"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -200,6 +212,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </div>
+    </motion.div>
   );
 };
 
