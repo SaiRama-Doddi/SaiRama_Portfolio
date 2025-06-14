@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
         navBg ? "bg-[#168aad] shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="flex items-center justify-between h-[12vh] w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
+      <nav className="flex items-center justify-between h-[8vh] w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
         <Link href="/">
           <Image

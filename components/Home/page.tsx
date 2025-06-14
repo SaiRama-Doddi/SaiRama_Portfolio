@@ -13,7 +13,6 @@ const Home = () => {
       <section id="services"><Services /></section>
       <section id="skills"><Skills /></section>
       <section id="project"><Projects /></section>
-      <section id="skills"><Skills /></section>
       <section id="contact"><Contact /></section>
     </div>
   )
