@@ -70,7 +70,7 @@ export const projectData = [
     description:
       "A modern creative agency site with responsive design, animations, and scroll effects.",
     images: ["/projects/nectar-1.png","/projects/nectar-2.png", "/projects/nectar-3.png","/projects/nectar-4.png","/projects/nectar-5.png","/projects/nectar-6.png","/projects/nectar-7.png","/projects/nectar-8.png"],
-    url: "https://nectar-ecommerce-9pvn.vercel.app/",
+    url: "https://nectar-ecommerce.vercel.app/",
     technologies: ["React", "Tailwindcss","Exprees JS", "PostgreSQL (hosted on NeonDB)", "Node.js"],
   },
    {
